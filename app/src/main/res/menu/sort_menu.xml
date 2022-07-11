@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/vote_random"
+            android:checked="true"
+            android:icon="@drawable/ic_random_24"
+            android:title="@string/random" />
+        <item
+            android:id="@+id/vote_best"
+            android:checked="false"
+            android:icon="@drawable/ic_arrow_up_24"
+            android:title="@string/best_vote" />
+        <item
+            android:id="@+id/vote_worst"
+            android:checked="false"
+            android:icon="@drawable/ic_arrow_down_24"
+            android:title="@string/worst_vote" />
+    </group>
+</menu>

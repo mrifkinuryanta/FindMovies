@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_detail_movie"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorBackgroundSecondary" />
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/view1"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/title_movie"
+        android:scaleType="fitXY"
+        tools:src="@drawable/poster_aquaman" />
+
+    <TextView
+        android:id="@+id/tv_genre_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_poster"
+        android:layout_toEndOf="@+id/img_poster"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="@string/genre"
+        android:textColor="@color/colorTextSecondary"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_genre_title"
+        android:layout_alignStart="@+id/tv_genre_title"
+        android:layout_marginEnd="16dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/colorTextSecondary"
+        tools:text="Action, Adventure, Fantasy" />
+
+    <TextView
+        android:id="@+id/tv_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_genre"
+        android:layout_alignStart="@+id/tv_genre"
+        android:paddingBottom="4dp"
+        android:text="@string/date_release"
+        android:textColor="@color/colorTextSecondary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date_title"
+        android:layout_alignStart="@+id/tv_date_title"
+        android:paddingBottom="16dp"
+        android:textColor="@color/colorTextSecondary"
+        tools:text="11/23/2019" />
+
+    <TextView
+        android:id="@+id/tv_runtime_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_date"
+        android:layout_alignStart="@+id/tv_date"
+        android:paddingBottom="4dp"
+        android:text="@string/duration"
+        android:textColor="@color/colorTextSecondary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_runtime_title"
+        android:layout_alignStart="@+id/tv_runtime_title"
+        android:paddingBottom="16dp"
+        android:textColor="@color/colorTextSecondary"
+        tools:text="1h 2m" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/img_poster"
+        android:background="@color/colorBackgroundSecondary" />
+
+    <TextView
+        android:id="@+id/tv_title_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:padding="16dp"
+        android:text="@string/overview"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_overview"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
+        tools:text="Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people and then the surface world. Standing in his way is Arthur Curry, Orm's half-human, half-Atlantean brother and true heir to the throne." />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Find Movies</string>
+    <string name="overview">Overview</string>
+    <string name="title_movie">Movies</string>
+    <string name="title_tv_show">TV Shows</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="genre">Genre</string>
+    <string name="date_release">Date Release</string>
+    <string name="duration">Duration</string>
+    <string name="empty_date">Date not available</string>
+    <string name="random">Random</string>
+    <string name="best_vote">Best</string>
+    <string name="worst_vote">Worst</string>
+    <string name="message_failure">There is something wrong. Failed to connect to server. You might try again later.</string>
+    <string name="empty_favorites_list">Empty favorites list</string>
+</resources>
